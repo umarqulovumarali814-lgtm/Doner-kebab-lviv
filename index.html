@@ -1,1 +1,74 @@
+!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doner Kebab Lviv – Promo</title>
+<style>
+body { font-family: Arial, sans-serif; margin:0; padding:0; background:#111; color:#fff; text-align:center;}
+.container { padding:20px; max-width:420px; margin:auto;}
+h1 { font-size:28px; margin-bottom:10px; }
+.lang-switch { margin-bottom:20px; }
+.btn { display:block; background:#ffcc00; color:#000; padding:14px; margin:10px 0; border-radius:10px; text-decoration:none; font-weight:bold; }
+.gift { background:#222; padding:15px; border-radius:10px; margin-top:20px; text-align:left; }
+input { width:100%; padding:12px; border-radius:8px; border:none; margin-top:10px;}
+.small { font-size:13px; opacity:0.7; margin-top:15px; text-align:center;}
+</style>
+</head>
+<body>
 
+<div class="container">
+
+<h1>🥙 Doner Kebab Lviv</h1>
+
+<div class="lang-switch">
+<button onclick="showUA()">🇺🇦 Українська</button>
+<button onclick="showEN()">🇬🇧 English</button>
+</div>
+
+<div id="ua">
+<p><b>Скануй QR — отримай подарунок 🎁</b></p>
+<div class="gift">
+<h3>🎁 Акції:</h3>
+<ul>
+<li>🥤 Безкоштовний напій або −10% знижка</li>
+<li>🥙 Купи 5 донерів — 6-й середній БЕЗКОШТОВНО</li>
+<li>🔥 Зроби донер САМ — унікальний формат!</li>
+</ul>
+<input type="text" placeholder="Телефон або Telegram">
+<a class="btn" href="#">🎉 Отримати подарунок</a>
+</div>
+</div>
+
+<div id="en" style="display:none;">
+<p><b>Scan the QR — get a gift 🎁</b></p>
+<div class="gift">
+<h3>🎁 Promotions:</h3>
+<ul>
+<li>🥤 Free drink or −10% discount</li>
+<li>🥙 Buy 5 doners — get 1 medium FREE</li>
+<li>🔥 Make your own doner — unique experience!</li>
+</ul>
+<input type="text" placeholder="Phone or Telegram">
+<a class="btn" href="#">🎉 Get gift</a>
+</div>
+</div>
+
+<a class="btn" href="https://instagram.com/" target="_blank">📸 Instagram</a>
+<a class="btn" href="#" target="_blank">🎵 TikTok</a>
+<a class="btn" href="#" target="_blank">▶️ YouTube</a>
+
+<div class="small">
+* 1 номер = 1 подарунок / 1 number = 1 gift<br>
+* Подарунок показати продавцю / Show gift to seller
+</div>
+
+</div>
+
+<script>
+function showUA(){ document.getElementById('ua').style.display='block'; document.getElementById('en').style.display='none'; }
+function showEN(){ document.getElementById('en').style.display='block'; document.getElementById('ua').style.display='none'; }
+</script>
+
+</body>
+</html>
